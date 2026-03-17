@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Insights India | AI Analyst</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1 class="glow-text">MARKET INSIGHTS<span>INDIA</span></h1>
+            <p class="subtitle">Real-time Sector Analysis Powered by Gemini AI</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="sectorInput" placeholder="e.g. pharmaceuticals, technology, agriculture..." autofocus>
+                <button id="analyzeBtn">Analyze Sector</button>
+            </div>
+
+            <div id="loader" class="hidden">
+                <div class="spinner"></div>
+                <p>Scraping market data and generating AI report...</p>
+            </div>
+
+            <div id="reportContainer" class="hidden">
+                <div class="report-header">
+                    <h2 id="reportTitle">Sector Report</h2>
+                    <button id="downloadBtn">Save as .md</button>
+                </div>
+                <div id="reportContent" class="markdown-body"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Market Analysis Service | Built with FastAPI & Gemini</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

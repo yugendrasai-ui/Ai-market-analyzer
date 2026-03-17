@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+python-dotenv
+httpx
+google-generativeai
+slowapi
+python-jose[cryptography]
+passlib[bcrypt]
+pydantic
+pydantic-settings
+beautifulsoup4
+duckduckgo-search
