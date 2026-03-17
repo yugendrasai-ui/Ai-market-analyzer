@@ -73,6 +73,14 @@ uvicorn app.main:app --reload
 ```
 The application will be available at: **http://127.0.0.1:8000**
 
+## 🌐 Deployment (Render.com)
+
+This project is pre-configured for **Render**. To deploy:
+1. Create a new **Blueprint** on Render.
+2. Connect this GitHub repository.
+3. Render will automatically detect the `render.yaml` file and set up the service.
+4. Fill in your `GEMINI_API_KEY` and `OPENROUTER_API_KEY` in the Render dashboard when prompted.
+
 ## 🧪 API Documentation
 Interative documentation is automatically generated:
 - Swagger UI: `http://127.0.0.1:8000/docs`
