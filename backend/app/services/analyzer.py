@@ -8,7 +8,7 @@ class MarketAnalyzer:
     def __init__(self):
         # Gemini SDK restored as requested
         genai.configure(api_key=settings.GEMINI_API_KEY)
-        self.model = genai.GenerativeModel('gemini-1.5-flash') 
+        self.model = genai.GenerativeModel('gemini-flash-latest') 
         self.openrouter_url = "https://openrouter.ai/api/v1/chat/completions"
 
     async def analyze_sector(self, sector: str, raw_data: str) -> str:
@@ -54,7 +54,7 @@ class MarketAnalyzer:
                         "X-Title": "Market Analyst Service"
                     }
                     payload = {
-                        "model": "deepseek/deepseek-r1", # OpenRouter will route to the best available provider
+                        "model": "openrouter/free", # Using the free router to ensure availability without credits
                         "messages": [{"role": "user", "content": prompt}]
                     }
                     response = await client.post(self.openrouter_url, headers=headers, json=payload, timeout=60.0)

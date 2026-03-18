@@ -1,13 +1,13 @@
 # AI Market Analyzer - India
 
-A high-performance FastAPI service that provides real-time market analysis for various sectors in the Indian economy. The system uses a hybrid AI approach (Gemini 1.5 & DeepSeek R1) combined with live web search to deliver structured, data-driven reports.
+A high-performance FastAPI service that provides real-time market analysis for various sectors in the Indian economy. The system uses a hybrid AI approach (Gemini 2.0 & OpenRouter Free) combined with live web search to deliver structured, data-driven reports.
 
 ![Market Insights UI](https://via.placeholder.com/800x400.png?text=Market+Insights+India+Dashboard)
 
 ## 🚀 Features
 
 - **Real-time Data**: Scrapes the latest 2024-2025 news and trends specifically for the Indian market.
-- **Hybrid AI Engine**: Primary analysis via **Google Gemini 1.5 Flash** with an automatic fallback to **DeepSeek R1** (via OpenRouter) for 100% uptime.
+- **Hybrid AI Engine**: Primary analysis via **Google Gemini Flash (Latest)** with an automatic fallback to **OpenRouter Free Tier** for 100% uptime and zero-cost redundancy.
 - **Premium UI**: A sleek, dark-themed dashboard with glassmorphism aesthetics.
 - **Async Architecture**: Fully asynchronous data pipeline for low-latency responses.
 - **Security**: Built-in rate limiting (SlowAPI) and sanitization to protect against abuse.
